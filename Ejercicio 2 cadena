@@ -1,0 +1,20 @@
+Algoritmo ComprobarInicioSubcadena
+	
+    // Leer la cadena principal
+    Escribir "Introduce la cadena principal: "
+    Leer cadena
+	
+    // Leer la subcadena
+    Escribir "Introduce la subcadena: "
+    Leer subcad
+	
+    // Obtener la longitud de la subcadena
+    longitud_subcadena = Longitud(subcad)
+	
+    // Extraer una porción de la cadena principal del tamaño de la subcadena
+    Si Subcadena(cadena, 1, longitud_subcadena) = subcad Entonces
+        Escribir "La cadena comienza con la subcadena."
+    SiNo
+        Escribir "La cadena NO comienza con la subcadena."
+    FinSi
+FinAlgoritmo
