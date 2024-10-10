@@ -1,0 +1,21 @@
+Algoritmo numero_de_carcateres
+	Escribir "Introduce una frase: "
+	Leer frase
+	
+	Repetir
+		Escribir "Introduce una letra: "
+		Leer letra
+	Hasta Que Longitud(letra) = 1
+	
+	contador <- 0
+	
+	Para i <- 0 Hasta Longitud(frase) - 1 Hacer
+		extrae <- subcadena (frase, i,i )
+		si extrae = letra Entonces
+			contador <- contador + 1
+		FinSi
+	FinPara
+	
+	Escribir "La letra de repite ", contador, " veces"
+	
+FinAlgoritmo
