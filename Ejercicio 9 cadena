@@ -1,0 +1,26 @@
+Algoritmo cadena9
+	Escribir "introduce laprimera cadena:"
+	Leer cadena1
+	Escribir "introduce la siguiente cadena: "
+	Leer cadena2
+	
+	tamaño1<- Longitud(cadena1)
+	tamaño2<- Longitud(cadena2)
+	i<- 0
+	encontrada<- Falso
+	
+	Mientras (i <= tamaño1 - tamaño2) Y (no encontrada) Hacer
+		Escribir  Subcadena(cadena1, i, i + tamaño2 - 1) + "@@@@"
+		Si Subcadena(cadena1, i, i + tamaño2 - 1) = cadena2 Entonces
+			encontrada = Verdadero
+		SiNo
+			i<- i + 1
+		FinSi
+	FinMientras
+	
+	Si encontrada = veradero Entonces
+		Escribir " La subcadena está incluida en la cadena."
+	SiNo
+		Escribir " La subcadena no está incluida en la cadena"
+	FinSi
+FinAlgoritmo
